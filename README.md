@@ -1,3 +1,7 @@
+This is a Chinese localized fork of FiveM Loading Screen - Material_Load from Loqrin
+
+---
+
 # [LoqScript] FiveM Loading Screen - Material_Load
 Material_Load is a loading screen developed by github.com/Loqrin. The loading screen comes with a configurable JSON file, to configure the loading screen to the user's liking. The JSON has configs such as:
 + Enable a solid, colour background and set the colour with RGB.
