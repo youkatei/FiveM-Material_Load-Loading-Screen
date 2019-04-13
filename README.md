@@ -49,9 +49,6 @@ The configuration is, again, rather quite simple. Open the folder "loqscript-mat
   * **"textColour"** : set this value to the format of "0,0,0" where the numbers are the RGB values for the colour of the text.
   * **"useBoldText"** : set this value to true or false if you want to use bold text.
   * **"serverTitle"** : set this value to the name of your server.
-  * **"playAudioInBackground"** : set this value to true or false if you want to play audio from file in the background when someone is joining.
-  * **"audioPath"** : set this value to the path of your music file. It can be anywhere but preferbly put it in the music folder.
-  * **"audioVolume"** : set this value between 0 and 100 to change the volume of the audio that is playing.
   * **"playVideoInBackground"** : set this value to true or false if you want to play audio from youtube in the background when someone is joining.
   * **"YTVideoID"** : set this value to the ID of a YouTube video. Eg: (https://www.youtube.com/watch?v=HPc8QMycGno) ID = HPc8QMycGno.
   * **"videoVolume"** : set this value between 0 and 100 to change the volume of the video that is playing.

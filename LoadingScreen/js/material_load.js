@@ -1,6 +1,3 @@
-var audioPath = ""
-var audioVolume = 5
-var playAudio = false
 var videoID = ""
 var videoVolume = 5
 
@@ -62,13 +59,6 @@ $(document).ready(function ()
 			}
 
 			$("#serverTitle").addClass("light-text");
-		}
-
-		if(config[0].playAudioInBackground == "true")
-		{
-			playAudio = true;
-			audioPath = config[0].audioPath
-			audioVolume = config[0].audioVolume
 		}
 
 		if(config[0].playVideoInBackground == "true")
