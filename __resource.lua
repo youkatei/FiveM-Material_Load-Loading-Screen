@@ -12,6 +12,8 @@ files {
     'LoadingScreen/images/backgroundImg6.jpg',
     'LoadingScreen/images/backgroundImg7.jpg',
     'LoadingScreen/images/backgroundImg8.jpg',
+    --Loading Music files--
+    'LoadingScreen/music/example.mp3',
     --Loading Config File--
     'LoadingScreen/config.json',
     --Loading JS Files--

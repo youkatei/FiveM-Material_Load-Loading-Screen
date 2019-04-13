@@ -8,7 +8,10 @@
 		"textColour" : "0,0,0",
 		"useBoldText" : "false",
 		"serverTitle" : "Insert Server Name Here",
-		"playAudioInBackground" : "true",
+		"playAudioInBackground" : "false",
+		"audioPath": "music/example.mp3",
+		"audioVolume": "5",
+		"playVideoInBackground" : "false",
 		"YTVideoID" : "HPc8QMycGno",
 		"videoVolume" : "5"
 	},

@@ -1,3 +1,6 @@
+var audioPath = ""
+var audioVolume = 5
+var playAudio = false
 var videoID = ""
 var videoVolume = 5
 
@@ -62,6 +65,13 @@ $(document).ready(function ()
 		}
 
 		if(config[0].playAudioInBackground == "true")
+		{
+			playAudio = true;
+			audioPath = config[0].audioPath
+			audioVolume = config[0].audioVolume
+		}
+
+		if(config[0].playVideoInBackground == "true")
 		{
 			videoID = config[0].YTVideoID
 			videoVolume = config[0].videoVolume
