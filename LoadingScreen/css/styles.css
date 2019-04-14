@@ -2,6 +2,7 @@ body
 {
 	background-color: rgb(20,20,20);
 	overflow: hidden;
+	font-family:  Roboto, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 }
 
 .backgroundcolour
