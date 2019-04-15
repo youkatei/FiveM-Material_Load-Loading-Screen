@@ -87,20 +87,24 @@
 		</div>
 
 		<script>
-				//Create the audio tag
+				// Create the audio tag
 				var soundFile = document.createElement('audio');
 				soundFile.preload = 'auto';
 				soundFile.loop = true;
 
-				//Load the sound file (using a source element for expandability)
+				// Load the sound file (using a source element for expandability)
 				var src = document.createElement('source');
-				src.setAttribute('src', 'music/vc-theme.ogg');
+				// 把你的音乐文件地址覆盖music/example.ogg
+				// 比如music/vc-theme.ogg
+				// 音量可在底下设置
+				src.setAttribute('src', 'music/example.ogg');
 				src.setAttribute('type', 'audio/ogg');
 				soundFile.appendChild(src);
 
-				//Load the audio tag
-				//It auto plays as a fallback
+				// Load the audio tag
+				// It auto plays as a fallback
 				soundFile.load();
+				// 音量1等于是100，如果改动，请也底下的soundFile.volume
 				soundFile.volume = 1;
 				soundFile.play();
 
@@ -108,6 +112,7 @@
 				function play() {
 					//Set the current time for the audio file to the beginning
 					soundFile.currentTime = 0.01;
+					// 音量1等于是100
 					soundFile.volume = 1;
 					//Due to a bug in Firefox, the audio needs to be played after a delay
 					setTimeout(function () { soundFile.play(); }, 1);
