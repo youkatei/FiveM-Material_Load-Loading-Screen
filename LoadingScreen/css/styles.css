@@ -5,19 +5,9 @@ body
 	font-family:  Roboto, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 }
 
-.backgroundcolour
+.useTextColour
 {
-	background-color: rgb();
-}
-
-.bold-text
-{
-	font-weight: 400;
-}
-
-.light-text
-{
-	font-weight: 100;
+	font-weight: 200;
 }
 
 .meme
@@ -30,7 +20,7 @@ body
     text-align: right;
 }
 
-#lists > li
+#list1 > li,#list2 > li,#list3 > li
 {
 	padding: 10px; 
 	min-height: 2.8em;
@@ -41,12 +31,12 @@ body
 	overflow: hidden;
 }
 
-#lists > li:nth-child(even)
+#list1 > li:nth-child(even),#list2 > li:nth-child(even),#list3 > li:nth-child(even)
 {
 	background-color: rgb(25,25,25);
 }
 
-#lists > li:nth-child(odd)
+#list1 > li:nth-child(even),#list2 > li:nth-child(even),#list3 > li:nth-child(even)
 {
 	background-color: rgb(30,30,30);
 }

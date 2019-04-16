@@ -1,4 +1,4 @@
-<head>
+
 	<head>
 		<!-- switch to bootcss CDN due to China Great Firewall -->
 		<link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css" rel="stylesheet">
@@ -16,7 +16,7 @@
 	<body id = "background" style = "background-size: cover; background-position: center;">
 		<div class = "valign-wrapper" style = "width: 100%; height: 100%;">
 			<div class = "container" style = "clear: both; width: 100%;">
-				<h1 id = "useTextColour1" class = "center-align">你正在进入</h1>
+				<h1 class = "center-align useTextColour">你正在进入</h1>
 				<div class = "progress red">
 					<div class = "indeterminate amber"></div>
 				</div>
@@ -26,10 +26,9 @@
 						<div class = "icon-block">
 							<h3 class = "center red-text"><i class = "material-icons medium">subject</i></h3>
 						</div>
-						<h4 id = "useTextColour2" class = "center-align">规则</h4>
-						
+						<h4  class = "center-align useTextColour">规则</h4>
 						<div class = "z-depth-3" style = "background-color: rgb(25,25,25); min-height: 19.6em;">
-							<ul id = "lists" class = "white-text">
+							<ul id = "list1" class = "white-text">
 								<li id = "rule1"></li>
 								<li id = "rule2"></li>
 								<li id = "rule3"></li>
@@ -45,10 +44,10 @@
 						<div class = "icon-block">
 							<h3 class = "center amber-text"><i class = "material-icons medium">dns</i></h3>
 						</div>
-						<h4 id = "useTextColour3" class = "center-align">与我们联系</h4>
+						<h4 class = "center-align useTextColour">与我们联系</h4>
 						
 						<div class = "z-depth-3" style = "background-color: rgb(25,25,25); min-height: 19.6em;">
-							<ul id = "lists" class = "white-text">
+							<ul id = "list2" class = "white-text">
 								<li id = "servers1"></li>
 								<li id = "servers2"></li>
 								<li id = "servers3"></li>
@@ -64,10 +63,10 @@
 						<div class = "icon-block">
 							<h3 class = "center red-text"><i class = "material-icons medium">polymer</i></h3>
 						</div>
-						<h4 id = "useTextColour4" class = "center-align">内容</h4>
+						<h4 class = "center-align useTextColour">内容</h4>
 						
 						<div class = "z-depth-3" style = "background-color: rgb(25,25,25); min-height: 19.6em;">
-							<ul id = "lists" class = "white-text">
+							<ul id = "list3" class = "white-text">
 								<li id = "content1"></li>
 								<li id = "content2"></li>
 								<li id = "content3"></li>
@@ -83,7 +82,7 @@
 		</div>
 
 		<div id = "credits">
-			<h5 id = "useTextColour5" class = "meme">Made by github.com/Loqrin</h5>
+			<h5 class = "meme useTextColour">Made by github.com/Loqrin, forked by github.com/youkatei</h5>
 		</div>
 
 		<script>
@@ -97,7 +96,7 @@
 				// 把你的音乐文件地址覆盖music/example.ogg
 				// 比如music/vc-theme.ogg
 				// 音量可在底下设置
-				src.setAttribute('src', 'music/example.ogg');
+				src.setAttribute('src', 'music/vc-theme.ogg');
 				src.setAttribute('type', 'audio/ogg');
 				soundFile.appendChild(src);
 
@@ -118,33 +117,4 @@
 					setTimeout(function () { soundFile.play(); }, 1);
 				}
 		</script>
-
-		<div id="player"></div>
-
-		<script>
-			var tag = document.createElement('script');
-
-			tag.src = "https://www.youtube.com/iframe_api";
-			var firstScriptTag = document.getElementsByTagName('script')[0];
-			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-			var player;
-			function onYouTubeIframeAPIReady() 
-			{
-				player = new YT.Player('player', {
-				height: '390',
-				width: '640',
-				videoId: '' + videoID,
-				events: {
-					'onReady': onPlayerReady
-				}
-				});
-			}
-
-			function onPlayerReady(event) {
-				event.target.setVolume(videoVolume);
-				event.target.playVideo();
-			}
-		</script>
 	</body>
-</head>

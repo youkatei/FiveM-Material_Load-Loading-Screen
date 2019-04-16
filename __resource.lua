@@ -7,7 +7,6 @@ files {
     'LoadingScreen/images/example.jpg',
     --Loading Music files--
     'LoadingScreen/music/example.ogg',
-    'LoadingScreen/music/example2.ogg',
     --Loading Config File--
     'LoadingScreen/config.json',
     --Loading JS Files--

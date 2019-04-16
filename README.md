@@ -43,9 +43,7 @@ start loqscript-material_load-loadingscreen
 自定义其实也很简单. 打开文件夹"loqscript-material_load-loadingscreen", 然后进入文件夹"LoadingScreen", 你会在里面发现一个文件夹叫"config.json". 
 
 1. 打开config.json
-2. 当你打开, 你会看到这些设定
-![alt text](https://i.loli.net/2019/04/15/5cb4102cea818.png "config.json设定")
-3. 底下是设定的解释
+2. 设定的解释
   * **"useBackgroundColour"** : 使用纯色背景, 设置成true或者false
   * **"backgroundColour"** : 纯色背景的颜色, 设置成RGB的数据. 数据的格式是"0,0,0"
   * **"useBackgroundImage"** : 使用图片背景, 设置成true或者false
@@ -54,18 +52,15 @@ start loqscript-material_load-loadingscreen
   * **"textColour"** : 文字的颜色, 设置成RGB的数据. 数据的格式是"0,0,0"
   * **"useBoldText"** : 使用粗字体, 设置成true或者false
   * **"serverTitle"** : 设置服务器名
-  * (Youtube API, 国内无法使用, 请看本段最后的非JSON自定义的替代的解释) ~~**"playVideoInBackground"** : set this value to true or false if you want to play audio from youtube in the background when someone is joining.~~
-  * ~~**"YTVideoID"** : set this value to the ID of a YouTube video. Eg: (https://www.youtube.com/watch?v=HPc8QMycGno) ID = HPc8QMycGno.~~
-  * ~~**"videoVolume"** : set this value between 0 and 100 to change the volume of the video that is playing.~~
-  * **"rule1"** : 设置载入时显示的服务器的规则, **rule2**到**rule7**都可以使用
-  * **"servers1"** : 设置载入时显示的联系方式/论坛地址/或者类似的, **servers2**到**servers7**都可以使用
-  * **"content1"** : 设置载入时显示的服务器的内容, **content2**到**content7**都可以使用
+  * **"rules"** : 设置载入时显示的服务器的规则, 每一对引号是一条
+  * **"servers"** : 设置载入时显示的联系方式/论坛地址/或者类似的, 每一对引号是一条
+  * **"contents"** : 设置载入时显示的服务器的内容, 每一对引号是一条
   
   **你只需要把设置内容加入引号之间！请不要加多余的引号！请不要改动其他东西, 比如逗号, 或增加更多的规则, 联系方式和服务器内容！这么做会使这个载入画面不工作！请只根据提供的介绍做！**
 
-  **来自Fork主youkatei: 因为国内防火墙的问题, 我写了一个能背景播放本地ogg音乐文件的功能. 可惜不知道为啥config里的数据总是传不进去（等有时间了再研究一下）. 所以如果想要播放本地文件, 请根据index.html里从97行开始的注释改动. 音乐文件夹必须是ogg格式！然后推荐放进“music”文件夹！**
+  **来自Fork主youkatei: 因为国内防火墙的问题, 我删除了youtube功能，并写了一个能背景播放本地ogg音乐文件的功能. 可惜不知道为啥config里的数据总是传不进去（等有时间了再研究一下）. 所以如果想要播放本地文件, 请根据index.html里从97行开始的注释改动. 音乐文件夹必须是ogg格式！然后推荐放进“music”文件夹！**
 
-4. 如果你使用背景图片, 别忘记把它加入文件夹"loqscript-material_load-loadingscreen"之中的__resource.lua
+3. 如果你使用背景图片, 别忘记把它加入文件夹"loqscript-material_load-loadingscreen"之中的__resource.lua
   * 请把文件夹位置加在"--Loading Image Files--"部分, 位置必须有''
   
 ---
